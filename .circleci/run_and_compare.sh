@@ -1,4 +1,5 @@
 #!/bin/bash
+lscpu
 cd ~/daal4py-ci/.circleci
 touch ~/d4p.out ~/skl.out
 export DESELECTED_TESTS=`python deselect_tests.py ../deselected_tests.yaml --absolute`
